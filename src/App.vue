@@ -12,11 +12,14 @@
 <script>
 const components = {};
 const componentNameList = [
-  'snow',
   'staggered-wave-loading',
   'nav-tab',
   'rotating-text',
-  'circle-gauge'
+  'staggered-glow-text',
+  'staggered-rise-text',
+  'circle-gauge',
+  'staggered-shrinking-loading',
+  'menu-hover-magnify'
 ];
 componentNameList.forEach(
   name => (components[name] = () => import(`./components/${name}.vue`))
@@ -58,6 +61,8 @@ export default {
     text-align: left;
     padding-left: 10px;
     transition: all 0.3s;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 
     &:hover {
       font-weight: 700;

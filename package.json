@@ -2,11 +2,12 @@
   "name": "css-magic",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://agrass-github.github.io/css-magic",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "npm run build && gh-pages -d build"
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "core-js": "^3.4.4",
